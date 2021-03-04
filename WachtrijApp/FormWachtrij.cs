@@ -103,7 +103,6 @@ namespace WachtrijApp
                 return Wachttijd;
             }
             Wachttijd += 4;
-            return Wachttijd;
             
             string node10 = doc.DocumentElement.SelectSingleNode("/Sensoren/Sensor10").InnerText;
             if (node10 == "False")
@@ -125,6 +124,8 @@ namespace WachtrijApp
                 return Wachttijd;
             }
             Wachttijd += 4;
+
+            return Wachttijd;
         }
 
         private void VerwerkAttractieStatusData()
